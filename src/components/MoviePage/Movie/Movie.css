@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+.Movie {
+    font-family: Roboto, Helvetica, sans-serif;
+    width: 20%;
+    height: 17rem;
+    margin: 5% 2% 15% 1%;
+    position: relative;
+    display: inline-flex;
+}
+
+.heart {
+    position: absolute;
+    z-index: 10;
+    top: 2%;
+    left: 3%;
+    font-size: 35px;
+    color: rgb(192, 188, 188);
+}
+
+.poster {
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+.poster img{
+    width: 100%;
+    height: 20rem;
+}
+
+.infos {
+    padding-left: 10%;
+}
+
+.movie-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.movie-item .name:hover, .imdb:hover {
+    color: rgb(214, 7, 7);
+}
+
+.adding {
+    padding-left: 10%;
+}
+
+.add-button {
+    width: 90%;
+    height: 25px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(38, 38, 38);
+}
+
+.add-button:hover {
+    background-color: rgb(163, 6, 6);
+    color: black;
+    border: 1px solid black;
+}
+
+.imdb, .name {
+    color: white;
+    text-decoration: none;
+}
+
+.name {
+    width: 100%;
+}
+
+@media screen and (max-width:950px) {
+    .movie-area{
+        width: 45%;
+        height: 500px;
+        margin: 10% 5% 0% 0%;
+        font-size: 20px;
+    }
+    .movie-item {
+        width: 100%;
+    }
+    .poster {
+        width: 95%;
+        height: 400px;
+    }
+    .poster img{
+        height: 400px;
+    }
+    .name {
+        font-size: 22px;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .movie-area {
+        display: flex;
+        justify-content : center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 8% 0% 2% 0%;
+
+    }
+    .movie-item {
+        width: 100%;
+    }
+    .poster {
+        height: 400px;
+    }
+    .poster img{
+        height: 400px;
+    }
+    .heart {
+        top: 8%;
+    }
+}

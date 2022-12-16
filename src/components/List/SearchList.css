@@ -1,0 +1,87 @@
+body {
+    color: #ffffff;    
+}
+
+.arrow {
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+.saving-area, .list-area{
+    display: block;
+    width: 100%;
+}
+
+
+.SearchList {
+    width: 25%;
+    top: 0;
+    right: 0;
+    padding-top: 5%;
+    padding-left: 1%;
+    display: block;
+    animation-name: animate; 
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    border-left: 1px solid white;
+    height: 100%;
+}
+
+@keyframes animate {
+    0% {
+        right: 0;
+        left: 100%;
+      }
+      100% {
+        right: 0%;
+        left: 100;
+      }
+}
+
+.name-area {
+    width: 73%;
+    display: inline-block;
+    height: 25px;
+    margin: 0% 1% 5% 0%;
+    outline: none;
+    padding-right: 1%;
+}
+
+.save {
+    width: 22%;
+    display: inline-block;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    background-color: rgb(38, 38, 38);
+}
+
+.save:enabled{
+    cursor: pointer;
+}
+
+.save:disabled{
+    cursor:not-allowed;
+}
+
+/* LIST */
+.list ,.list-item {
+    list-style: none;
+}
+
+
+@media screen and (max-width:950px) {
+    .save {
+        width: 40%;
+    }
+    .SearchList{
+        width: 23%;
+    }
+    .saving-area {
+        width: 100%;
+    }
+    .name-area {
+        width: 90%;
+    }
+}

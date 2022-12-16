@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+.ListMovie{
+    display: block;
+    margin-bottom: 13%;
+    border-left: 1px solid white;
+}
+
+.movie-info, .movie-poster {
+    display: inline-block;
+}
+
+.del-heart {
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    color: rgb(192, 188, 188);
+    cursor: pointer;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    align-items: stretch;
+}
+
+.item {
+    font-family: Roboto, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+
+.movie-poster {
+    height: 80px;
+    margin-right: 5%;
+}
+
+.movie-poster img{
+    height: 80px;
+}
+
+.movie-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.movie-name {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.name{
+    padding-right: 2%;
+}
+
+
+@media screen and (max-width:950px) {
+    .movie-area{
+        width: 33%;
+        margin: 15% 0% 0% 0%;
+        font-size: 12px;
+    }
+    .item {
+        width: 100%;
+    }
+    .poster {
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .movie-area {
+        width: 100%;
+        margin: 15% 0% 5% 15%;
+        font-size: 15px;
+    }
+    .item {
+        width: 60%;
+    }
+    .poster {
+        height: 250px;
+    }
+    .poster img{
+        height: 250px;
+    }
+}
